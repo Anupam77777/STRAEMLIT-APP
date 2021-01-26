@@ -7,14 +7,14 @@ def main():
 	st.header("Deploying Streamlit in Docker")
 
 
-	activities = ["EDAL","Plots"]
+	activities = ["EDAL","Plot"]
 
 	choices = st.sidebar.selectbox('Select Activities',activities)
 
 	if choices == 'EDAL':
 		st.subheader("EDA")
 
-	elif choices == 'Plots':
+	elif choices == 'Plot':
 		st.subheader("Visualization")
 
 
