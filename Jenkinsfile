@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("anupam008/nodeapp")
+        app = docker.build("anupam008/stream")
     }
 
     stage('Test image') {
