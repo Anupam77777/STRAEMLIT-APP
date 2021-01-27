@@ -30,4 +30,10 @@ node {
             } 
                 echo "Trying to Push Docker Build to DockerHub"
     }
+    post { 
+        always {
+            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
+        }
+    }
 }
+
